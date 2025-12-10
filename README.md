@@ -2,6 +2,7 @@
 This is Laboratory Assignment 7 for the course, Software Engineering 1, taken during the First Semester of Academic Year, 2025-2026, at New Era University.
 ## Problem Statement
 **Background:**
+
 CIMB is a digital bank that offers GSave and UpSave savings accounts.   As with a typical Savings Account, it contains accountNumber, accountName, and a balance for that account.
 
 The typical savings account offers an interest rate of 1%.
@@ -13,7 +14,7 @@ Benefits include the "Standard Savings Account" plus access to "GCash transfer".
 The UpSave account offers the highest interest rate of 4.0%.
 Benefits include the "Standard Savings Account" plus "with Insurance".
 
-**Methods Description**
+**Methods Description:**
 <ol>
   <li><b>showAccountType()</b> - Either returns "Savings Account", "GSave" or "UpSave."</li>
   <li><b>getInterestRate()</b> - Either returns 1% for Savings Account; 2.5% for GSave; 4.0% UpSave</li>
