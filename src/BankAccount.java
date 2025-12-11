@@ -1,8 +1,8 @@
 public interface BankAccount {
     public String showAccountType();
-    public double getInterestRate();
-    public double getBalance();
-    public double showBenefits();
-    public double computeBalanceWithInterest();
+    public Double getInterestRate();
+    public Double getBalance();
+    public String showBenefits();
+    public Double computeBalanceWithInterest();
     public String showInfo();
 }

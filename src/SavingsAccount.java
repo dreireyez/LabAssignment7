@@ -7,8 +7,8 @@ public class SavingsAccount implements BankAccount {
     public String getAccountNumber() {
         return accountNumber;
     }
-    public void setAccountNumber(String accountNumber) {
-        this.accountNumber = accountNumber;
+    public void setAccountNumber(int accountNumber) {
+        this.accountNumber = String.valueOf(accountNumber);
     }
     public String getAccountName() {
         return accountName;
@@ -17,7 +17,7 @@ public class SavingsAccount implements BankAccount {
         this.accountName = accountName;
     }
     @Override
-    public double getBalance() {
+    public Double getBalance() {
         return balance;
     }
     public void setBalance(double balance) {
@@ -30,7 +30,7 @@ public class SavingsAccount implements BankAccount {
         return "Savings Account";
     }
     @Override
-    public double getInterestRate() {
+    public Double getInterestRate() {
         return 0.01; 
     }
     @Override
@@ -38,19 +38,15 @@ public class SavingsAccount implements BankAccount {
         return "Standard Savings Account";
     }
     @Override
-    public double computeBalanceWithInterest() {
+    public Double computeBalanceWithInterest() {
         return this.balance + (this.balance * getInterestRate()); 
     }
     @Override
     public String showInfo() {
         String accountInfo = "";
-            accountInfo += "Account Number: " + this.accountNumber;
-            accountInfo += "Account Name: " + this.accountName;
+            accountInfo += "Account number: " + this.accountNumber +"\n";
+            accountInfo += "Account name: " + this.accountName +"\n";
             accountInfo += "Balance: " + this.balance;
-            accountInfo += "Account Type: " + showAccountType();
-            accountInfo += "Interest Rate: " + getInterestRate();
-            accountInfo += "New Balance: " + computeBalanceWithInterest();
-            accountInfo += "Benefits: " + showBenefits();
         return accountInfo;
     }
 }
